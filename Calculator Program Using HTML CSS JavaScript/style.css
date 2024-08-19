@@ -1,0 +1,123 @@
+/* style.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif; /* Modern and clean font */
+}
+
+body {
+  background: #121212; /* Dark background */
+  color: #e0e0e0; /* Light gray text for body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+#calculator {
+  background: #1e1e1e; /* Dark gray for calculator body */
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7); /* Deep shadow for depth */
+  padding: 20px;
+  max-width: 400px; /* Width for calculator */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#display {
+  width: 100%;
+  background: #262626; /* Slightly lighter gray for display */
+  border: none;
+  padding: 20px;
+  font-size: 2.2em;
+  color: #fff; /* White text for display */
+  text-align: right; /* Align text to the right */
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Inset shadow for depth */
+}
+
+#display:focus {
+  outline: none; /* Remove focus outline */
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for keys */
+  gap: 10px; /* Space between buttons */
+  width: 100%;
+}
+
+button {
+  background: #333; /* Default dark gray for buttons */
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.5em;
+  color: #e0e0e0; /* Light gray text for buttons */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow for buttons */
+}
+
+button:hover {
+  background: #444; /* Lighter gray on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+button:active {
+  background: #555; /* Even lighter gray when active */
+  transform: translateY(2px); /* Slightly lower when active */
+}
+
+/* Operator buttons */
+button.operator-btn {
+  background: #ffa726; /* Orange for operators */
+}
+
+button.operator-btn:hover {
+  background: #ffb74d; /* Lighter orange on hover */
+}
+
+button.operator-btn:active {
+  background: #fb8c00; /* Darker orange when active */
+}
+
+/* Calculate button */
+button:nth-child(18) {
+  grid-column: span 2; /* Span across two columns */
+  background: #66bb6a; /* Green for = button */
+}
+
+button:nth-child(18):hover {
+  background: #81c784; /* Lighter green on hover */
+}
+
+button:nth-child(18):active {
+  background: #388e3c; /* Darker green when active */
+}
+
+@media (max-width: 400px) {
+  #calculator {
+    padding: 15px; /* Adjust padding on smaller screens */
+  }
+
+  #display {
+    font-size: 1.8em; /* Adjust font size on smaller screens */
+    padding: 15px; /* Adjust padding on smaller screens */
+  }
+
+  button {
+    padding: 15px; /* Adjust padding on smaller screens */
+    font-size: 1.2em; /* Adjust font size on smaller screens */
+  }
+}

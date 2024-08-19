@@ -1,0 +1,85 @@
+/* style.css */
+
+/* Basic reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3e8ff; /* Light lavender background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Padding to avoid content touching the edges */
+}
+
+#container {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.2); /* Purple shadow */
+  width: 320px; /* Adjusted width to better fit content */
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #663399; /* Purple color */
+}
+
+label {
+  font-size: 1em;
+  color: #663399; /* Purple color */
+}
+
+input[type="number"] {
+  width: 80px; /* Wider input for better usability */
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #b19cd9; /* Light purple border */
+  border-radius: 4px;
+  font-size: 1em;
+  text-align: center; /* Center the number inside the input */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #800080; /* Dark purple background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5a005a; /* Darker shade of purple on hover */
+}
+
+#diceResults {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #4b0082; /* Indigo color */
+}
+
+#diceImages {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow dice images to wrap to the next line if necessary */
+}
+
+#diceImages img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  /* border: 2px solid #b19cd9; Light purple border for dice images */
+  border-radius: 4px;
+}

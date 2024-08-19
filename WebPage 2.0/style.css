@@ -1,0 +1,67 @@
+/* Reset basic padding/margins */
+body,
+input,
+button,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center content vertically and horizontally */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+input[type="text"] {
+  border: 2px solid #8e44ad; /* Purple border */
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 300px; /* Limit input width */
+}
+
+input[type="text"]::placeholder {
+  color: #b8b8b8; /* Placeholder color */
+}
+
+button {
+  background-color: #8e44ad; /* Purple background */
+  border: none;
+  border-radius: 5px;
+  color: white; /* White text */
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #732d91; /* Darker purple on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+button:active {
+  background-color: #5c1d6f; /* Even darker purple on click */
+  transform: scale(0.95); /* Slightly smaller on click */
+}
+
+img {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Ensure image fits within the specified dimensions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  display: none; /* Initially hidden */
+}

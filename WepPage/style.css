@@ -1,0 +1,60 @@
+/* style.css */
+
+/* Basic reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Modern font */
+  background: linear-gradient(
+    135deg,
+    #8e44ad,
+    #3498db
+  ); /* Gradient background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White text color for better contrast */
+}
+
+#clock-container {
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deep shadow */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Blur effect for background */
+}
+
+#clock {
+  font-size: 4em; /* Large font size for visibility */
+  font-weight: bold;
+  letter-spacing: 2px; /* Spacing between letters */
+  color: #ffeb3b; /* Bright yellow color for clock text */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+  animation: pulse 1s infinite; /* Pulse animation */
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  #clock {
+    font-size: 2.5em; /* Smaller font size on small screens */
+  }
+  #clock-container {
+    padding: 15px 30px; /* Adjust padding on small screens */
+  }
+}
