@@ -1,7 +1,8 @@
-🎓 JavaScript Learning Series
+# 🎓 JavaScript Learning Series
+
 This repository contains a collection of JavaScript projects that I've developed while learning from Bro Code. Each project focuses on different aspects of JavaScript, HTML, and CSS. Explore the projects to see practical implementations of fundamental and advanced JavaScript concepts! 🚀
 
-📁 Projects
+## 📁 Projects
 1. 🧮 Calculator Program Using HTML CSS JavaScript
 A simple calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations.
 
@@ -35,7 +36,7 @@ A basic webpage demonstrating fundamental web design theories and practices.
 11. 📜 WebPage - Basic Theories
 Another basic webpage focused on the foundational concepts of web development.
 
-🔧 How to Run
+## 🔧 How to Run
 
 Clone the repository:
 git clone https://github.com/your-username/JavaScript-Learning-Series.git
@@ -45,8 +46,8 @@ cd JavaScript-Learning-Series
 
 Open the HTML files in your preferred web browser to see the projects in action.
 
-📚 Learning Resource
+## 📚 Learning Resource
 These projects were created while following tutorials from Bro Code. They serve as practical exercises to reinforce JavaScript concepts.
 
-🌟 Acknowledgments
+## 🌟 Acknowledgments
 Thanks to Bro Code for the amazing tutorials that made these projects possible!
